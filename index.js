@@ -1,50 +1,55 @@
-//ALGORITMO-1
-let nombre = "";
-let apellido = "" ;
-let edad = "";
-  for (i =0; i<1; i ++){
-      nombre += prompt ("ingrese su nombre");
-      apellido += prompt ("ingrese su apellido");
-      edad += prompt ("ingrese su edad");
-  }
-  console.log (  nombre + "   "+ apellido + "   "+ edad +  "  ");
+ //1
 
-//ALGORITMO-2 
+ const bienvenido=(nombre, apellido) => {}
 
-  const numero = prompt("Escribe un número que sea divisible por 5 o por 8");
- for (let i = numero ; i<= 100; i ++){
-
-    if(numero === null){
-        alert (` No ingreso una instruccion coherente`)
-        console.log ("No ingreso una instruccion coherente")
-        break
-      
-    }
-    
+ let nombre = prompt ("Ingrese su nombre");
+ let apellido = prompt ("Ingrese su apellido");
  
-  else if (numero % 5 === 0 && numero % 8 === 0 ) {
-      alert (`El numero ${i} es divisible por 5 y por 8`);
-  console.log ("Es divisible por 5 y por 8");
-  break
-  
  
-  } 
-   else if ( numero %5 === 0 || numero === '' ){
-    alert (`El numero ${i} es divisible por 5`);
-    console.log ("Es divisible por 5");
-    break
-  }
-  else if ( numero % 8 === 0 ){
-    alert (`El numero ${i} es divisible por 8`);
-    console.log ("Es divisible por 8");
-    break
-    
-  }
-  else if ( numero %5 !== 0 || numero %8 !== 0){
-    alert (`El numero ${i} no es divisible por 5 ni por 8`);
-    console.log ("No es divisible por 5 ni por 8");
-    break
-    
-      
-    }
-    }
+ alert (`Bienvenido/a ${nombre} ${apellido} a King Toot's Music Store`);
+ console.log (`Bienvenido/a ${nombre} ${apellido} a King Toot's Music Store`);
+ for (let i = 0; i < nombre.length; i ++){
+     console.log (nombre[i]);}
+ 
+ 
+ 
+ //2
+ 
+ const sumar = (numero1, numero2) => {
+     return parseInt (numero1) + parseInt (numero2);
+     
+ 
+ }
+ const restar = (numero1, numero2) => {
+     return parseInt (numero1) - parseInt (numero2);
+     
+ 
+ }
+ let operacion = prompt ("¿Que operacion desea realizar? Ingrese '1' para sumar o '2' para restar")
+ 
+ if (operacion == 1){
+     let num1 = prompt ("Ingrese primer numero");
+     let num2 = prompt ("Ingrese segundo numero");
+     let resultado= sumar (num1, num2);
+     alert (`Tu resultado es ${resultado}`)
+     console.log (`Tu resultado es ${resultado}`)
+     
+     
+ }
+ else if (operacion == 2){
+     let num1 = prompt ("Ingrese primer numero");
+     let num2 = prompt ("Ingrese segundo numero");
+     let resultado= restar ( num1, num2);
+     alert (`Tu resultado es ${resultado}`)
+     console.log (`Tu resultado es ${resultado}`)}
+ 
+     
+ 
+ 
+ 
+ 
+ 
+ 
+     
+ 
+ 
